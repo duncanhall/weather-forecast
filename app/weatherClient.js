@@ -2,9 +2,7 @@
 
 var bluebird = require('bluebird');
 var request = bluebird.promisify(require('request'));
-
 var API_KEY = '856add1ae87b1ec3d33a90ab024c61c0';
-
 
 function getForecast(req, res) {
 
