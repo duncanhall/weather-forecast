@@ -1,0 +1,21 @@
+.main {
+    margin-bottom: 150px;
+}
+
+.time-block {
+    margin-bottom: 14px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 2px 2px 20px 2px;
+}
+
+.time-block .title {
+    display: block;
+    font-size: 1.4em;
+    margin: 0 0 10px 4px;
+}
+
+.time-block .detail {
+    margin-left: 4px;
+    display: block;
+}
