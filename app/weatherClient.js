@@ -43,6 +43,7 @@ function toSimpleInfo(data) {
         temp: data.main.temp,
         humidity: data.main.humidity,
         title: data.weather[0].main,
+        description: data.weather[0].description,
         icon: 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png'
     }
 }

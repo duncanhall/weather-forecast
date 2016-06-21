@@ -12,7 +12,14 @@
 .time-block .title {
     display: block;
     font-size: 1.4em;
-    margin: 0 0 10px 4px;
+    margin: 0 0 4px 4px;
+}
+
+.time-block .description {
+    display: block;
+    font-size: 0.8em;
+    margin: 0 0 6px 4px;
+    text-transform: uppercase;
 }
 
 .time-block .detail {

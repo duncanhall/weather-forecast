@@ -2,6 +2,7 @@
 <div ng-repeat="item in $ctrl.forecast.list" class="time-block">
     <span class="heading"><img ng-src="{{item.icon}}" /> {{item.time}}</span><br />
     <span class="title">{{item.title}}</span>
+    <span class="description">{{item.description}}</span>
     <span class="detail">
         Temp: {{item.temp}} &#x2103<br />
         Humidity: {{item.humidity}}%
