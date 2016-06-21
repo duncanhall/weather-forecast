@@ -1,4 +1,8 @@
+'use strict';
 
-angular.module("weatherForecast").component("oneDayForecast", {
-    template: 'This is a forecast'
+angular.module('weatherForecast').component('oneDayForecast', {
+    templateUrl: 'views/one-day-forecast.html',
+    bindings: {
+        forecast: '='
+    }
 });

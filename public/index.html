@@ -15,10 +15,15 @@
 
 <div class="container" ng-controller="mainCtrl">
     <h1>5 day forecast</h1>
-    <div ng-repeat="(key, value) in forecasts">
-        {{value}}
-        <one-day-forecast></one-day-forecast>
+
+    <div class="row">
+
+        <div ng-repeat="value in forecasts" class="col-md-2">
+            <one-day-forecast forecast="value"></one-day-forecast>
+        </div>
+
     </div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

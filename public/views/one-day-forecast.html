@@ -1,0 +1,7 @@
+<h2>{{$ctrl.forecast.day}}</h2>
+<div ng-repeat="item in $ctrl.forecast.list">
+    <h4><img ng-src="{{item.icon}}" /> {{item.time}}</h4>
+    <h4>{{item.title}}</h4>
+    Temp: {{item.temp}}<br />
+    Humidity: {{item.humidity}}
+</div>
