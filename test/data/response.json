@@ -1,0 +1,1 @@
+{"dt":1466542800,"main":{"temp":18.13,"temp_min":17.24,"temp_max":18.13,"pressure":1024.06,"sea_level":1031.54,"grnd_level":1024.06,"humidity":73,"temp_kf":0.89},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01n"}],"clouds":{"all":0},"wind":{"speed":2.81,"deg":220.001},"sys":{"pod":"n"},"dt_txt":"2016-06-21 21:00:00"}

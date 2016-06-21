@@ -3,6 +3,7 @@
 var bluebird = require('bluebird');
 var request = bluebird.promisify(require('request'));
 var API_KEY = '856add1ae87b1ec3d33a90ab024c61c0';
+var forecast = require('./forecast');
 var currentDay = -1;
 
 /**
@@ -20,32 +21,11 @@ function getForecast(req, res) {
         if (result.body.cod !== "200") {
             res.send(500);
         } else {
-            var forecast = result.body;
-            var days = forecast.list.map(toSimpleInfo).reduce(listItemByDay, []);
+            var data = result.body;
+            var days = data.list.map(forecast.format).reduce(listItemByDay, []);
             res.json(days)
         }
     });
-}
-
-/**
- *
- * @param data
- * @returns {{timestamp: number, time: string, temp: *, humidity: *, title: *, icon: string}}
- */
-function toSimpleInfo(data) {
-
-    var timestamp = data.dt * 1000;
-    var friendlyTime = new Date(timestamp);
-
-    return {
-        timestamp: timestamp,
-        time: friendlyTime.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'}),
-        temp: data.main.temp,
-        humidity: data.main.humidity,
-        title: data.weather[0].main,
-        description: data.weather[0].description,
-        icon: 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png'
-    }
 }
 
 /**
