@@ -4,7 +4,7 @@
   "description": "A simple 5 day weather forecast",
   "main": "server.js",
   "scripts": {
-    "test": "Add some tests!"
+    "test": "./node_modules/mocha/bin/mocha --recursive test/app"
   },
   "repository": {
     "type": "git",
