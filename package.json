@@ -1,0 +1,24 @@
+{
+  "name": "weather-forecast",
+  "version": "0.1.0",
+  "description": "A simple 5 day weather forecast",
+  "main": "server.js",
+  "scripts": {
+    "test": "Add some tests!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duncanhall/weather-forecast.git"
+  },
+  "author": "Duncan Hall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duncanhall/weather-forecast/issues"
+  },
+  "homepage": "https://github.com/duncanhall/weather-forecast#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "express": "^4.14.0",
+    "request": "^2.72.0"
+  }
+}
